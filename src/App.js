@@ -1,23 +1,25 @@
-import "./App.css";
-import Analytics from "./components/Analytics";
-import Cards from "./components/Cards/Cards";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { theme, GlobalStyle } from "./style";
 import Navbar from "./components/Nav/Navbar";
-import Newsletter from "./components/Newsletter";
+import Home from "./pages/home";
+import Contact from "./pages/contact";
+import PageNotFound from "./pages/notFound";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Analytics />
-        <Newsletter />
-        <Cards />
-        <Footer />
-      </main>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Router>
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

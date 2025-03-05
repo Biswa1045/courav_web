@@ -18,9 +18,9 @@ const CardItem = ({ styleName, icon, title, price, features }) => {
           </p>
         ))}
       </div>
-      <Button classCss="btn-primary my-6 mx-auto px-12 py-3">
+      {/* <Button classCss="btn-primary my-6 mx-auto px-12 py-3">
         <span className="z-10 relative">Get Details</span>
-      </Button>
+      </Button> */}
     </div>
   );
 };
