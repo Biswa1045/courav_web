@@ -31,7 +31,7 @@ const Contact = () => {
       <Navbar />
       
       {/* Contact Hero Section */}
-      <section className=" py-20 px-4">
+      <section className=" py-10 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Get in Touch
@@ -39,15 +39,15 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row justify-center gap-8 mb-12">
             <div className="flex items-center gap-2">
               <FaPhoneAlt className="text-primary" />
-              <span className="text-white">+91 96673 09777</span>
+              <span className="text-white">+91 ---</span>
             </div>
             <div className="flex items-center gap-2">
               <FaWhatsapp className="text-primary" />
-              <span className="text-white">+91 96673 09777</span>
+              <span className="text-white">+91 ---</span>
             </div>
             <div className="flex items-center gap-2">
               <FaMailBulk className="text-primary" />
-              <span className="text-white">courav@gmail.com</span>
+              <span className="text-white">gamiktechnologies@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-primary" />

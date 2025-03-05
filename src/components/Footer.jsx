@@ -20,7 +20,7 @@ const Footer = () => {
             Bhubaneswar, Odisha  
             <br />
             <a href="mailto:courav.india@gmail.com" className="hover:underline">
-              courav.india@gmail.com
+            gamiktechnologies@gmail.com
             </a>
           </p>
           <div className="flex space-x-4 mt-6">
